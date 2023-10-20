@@ -19,8 +19,8 @@
 
 SNMPv1
 
-- O SNMPv1 foi a primeira versão do protocolo e é conhecido por sua simplicidade. No entanto, ele tem algumas limitações de segurança, como o uso de comunidades (strings de texto) para autenticação, que são vulneráveis a ataques de força bruta. Aqui está um exemplo de uma operação SNMPv1 para obter o uptime de um dispositivo:
-
+- O SNMPv1 foi a primeira versão do protocolo e é conhecido por sua simplicidade. No entanto, ele tem algumas limitações de segurança, como o uso de comunidades (strings de texto) para autenticação, que são vulneráveis a ataques de força bruta.
+Exemplo de uma operação SNMPv1 para obter o uptime de um dispositivo:
 
 ```
 Comunidade de leitura (Read Community): public
@@ -29,7 +29,8 @@ OID (Object Identifier) para Uptime: 1.3.6.1.2.1.1.3.0
 
 ### SNMPv2c
 
-- O SNMPv2c(Community-Based Simple Network Management Protocol) trouxe melhorias em relação ao SNMPv1, mantendo uma abordagem simples. Ele ainda usa comunidades para autenticação, mas adiciona suporte a operações de ==GET BULK e GET NEXT==. Aqui está um exemplo de operação SNMPv2c para obter informações sobre a interface de rede de um roteador:
+- O SNMPv2c(Community-Based Simple Network Management Protocol) trouxe melhorias em relação ao SNMPv1, mantendo uma abordagem simples. Ele ainda usa comunidades para autenticação, mas adiciona suporte a operações de ==GET BULK e GET NEXT==. Ambas as operações GET NEXT e GET BULK são usadas para interagir com agentes SNMP para coletar informações de gerenciamento de rede, mas a diferença principal está na quantidade de informações que podem ser obtidas em uma única solicitação. O GET NEXT obtém um objeto de cada vez, enquanto o GET BULK obtém um conjunto de objetos.
+Exemplo de operação SNMPv2c para obter informações sobre a interface de rede de um roteador:
 
 ```
 Comunidade de leitura (Read Community): public
@@ -38,7 +39,8 @@ OID para informações da interface: 1.3.6.1.2.1.2.2.1
 
 ### SNMPv3
 
-- O SNMPv3 é a versão mais segura e flexível do protocolo. Ele introduz autenticação e criptografia robustas, tornando-o adequado para ambientes sensíveis à segurança. O SNMPv3 oferece três níveis de segurança: autenticação, privacidade e controle de acesso. Aqui está um exemplo de operação SNMPv3 com autenticação e privacidade para consultar a tabela de interfaces de um switch:
+- O SNMPv3 é a versão mais segura e flexível do protocolo. Ele introduz autenticação e criptografia robustas, tornando-o adequado para ambientes sensíveis à segurança. O SNMPv3 oferece três níveis de segurança: autenticação, privacidade e controle de acesso.
+Exemplo de operação SNMPv3 com autenticação e privacidade para consultar a tabela de interfaces de um switch:
 
 ```
 Nome de usuário: admin
