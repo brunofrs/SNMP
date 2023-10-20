@@ -11,7 +11,7 @@
 
 # O que é o SNMP?
 
--O Protocolo SNMP(Simple Network Management Protocol), utilizado na porta padrão 161, é um protocolo de rede que permite a monitoria e gestão de dispositivos de rede, coletando informações e controlando configurações em sistemas, como roteadores, switches e servidores.
+- O Protocolo SNMP(Simple Network Management Protocol), utilizado na porta padrão 161, é um protocolo de rede que permite a monitoria e gestão de dispositivos de rede, coletando informações e controlando configurações em sistemas, como roteadores, switches e servidores.
 
 - Com o SNMP, podemos receber diversas estatísticas de um dispositivo. Por exemplo: Uptime, Carga da CPU, Largura de banda, Consumo de memória, Número de conexões ativas, Status de portas e interfaces, Tráfego de pacotes, níveis de ruído e intensidade de sinal em dispositivos de rede sem fio, Status de impressoras em uma rede, Espaço em disco disponível, entre outros.
 
