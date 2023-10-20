@@ -84,3 +84,17 @@ Neste exemplo, o OID "1.3.6.1.2.1.1.3.0" refere-se ao tempo de atividade (uptime
   - ...
   
 ```
+
+### Como OIDs e MIB funcionam juntos no SNMP?
+
+Os OIDs são usados nas operações do SNMP, como GET (recuperação) e SET (configuração), para acessar informações específicas na MIB. Quando precisamos acessar informações de um dispositivo, especificamos o OID correspondente a informação desejada na MIB. O dispositivo responde com o valor associado a esse OID na MIB.
+
+**Exemplo de operação SNMP GET com um OID:**
+
+Vamos tentar recuperar o uptime de um dispositivo usando o seguinte OID:
+
+```
+OID para Uptime: 1.3.6.1.2.1.1.3.0
+```
+
+Ao realizar uma operação GET com este OID, o dispositivo retornaria o tempo de atividade atual, que é armazenado na MIB.
