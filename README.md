@@ -56,7 +56,7 @@ OID para tabela de interfaces: 1.3.6.1.2.1.2.2
 ### O que são OIDs?
 
 - Os OIDs são sequências de números que formam uma estrutura hierárquica. Cada OID é exclusivo e atua como um endereço para identificar informações específicas na MIB. A MIB é como uma árvore de informações gerenciadas, onde cada nó da árvore é representado por um OID.
-- Aqui está um exemplo de um OID:
+- Exemplo de um OID:
   
 ```
 1.3.6.1.2.1.1.3.0
