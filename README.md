@@ -49,3 +49,32 @@ Senha de privacidade: minha_senha_privada
 OID para tabela de interfaces: 1.3.6.1.2.1.2.2
 ```
 
+# Object Identifiers (OIDs) e Management Information Base (MIB)
+
+- Object Identifiers(OIDs) e a Management Information Base(MIB) são elementos fundamentais. Eles desempenham um papel crucial na identificação e recuperação de informações gerenciadas em dispositivos de rede.
+
+### O que são OIDs?
+
+- Os OIDs são sequências de números que formam uma estrutura hierárquica. Cada OID é exclusivo e atua como um endereço para identificar informações específicas na MIB. A MIB é como uma árvore de informações gerenciadas, onde cada nó da árvore é representado por um OID. - Aqui está um exemplo de um OID:
+```
+1.3.6.1.2.1.1.3.0
+```
+Neste exemplo, o OID "1.3.6.1.2.1.1.3.0" refere-se ao tempo de atividade (uptime) de um dispositivo, que é uma informação gerenciada na MIB padrão do sistema.
+
+### O que é a MIB?
+
+- A MIB (Management Information Base) é uma estrutura de dados hierárquica que organiza informações gerenciadas em dispositivos de rede. Ela atua como um repositório para armazenar dados que podem ser acessados via SNMP. Cada nó na árvore da MIB é identificado por um OID único e contém informações específicas sobre aspectos do dispositivo, como status, configurações e estatísticas.
+
+**Exemplo de estrutura da MIB:**
+
+```
+- MIB
+  - Sistema
+    - Uptime
+    - Nome do Dispositivo
+  - Interfaces
+    - Interface 1
+    - Interface 2
+  - ...
+  
+```
